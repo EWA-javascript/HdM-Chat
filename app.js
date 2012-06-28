@@ -14,7 +14,7 @@ var PORT = 8080;
 var app = module.exports = Express.createServer();
 
 app.configure(function () {
-    app.use(Express.static(__dirname + '/public'));
+    app.use(Express['static'](__dirname + '/public'));
     app.use(app.router);
   });
 
