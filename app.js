@@ -3,6 +3,9 @@
  *
  */
 
+/*
+ * Modules
+ */
 var Express = require('express');
 var WebSocket = require('faye-websocket');
 
@@ -18,20 +21,19 @@ app.configure(function () {
     app.use(app.router);
   });
 
-var connections = [];
+//TODO: What about the connections erm...?
 
 function broadcast(event) {
-  connections.forEach(function (socket) {
-      console.log('sending ' + event.data);
-      socket.send(event.data);
-    });
+  /*
+  TODO: Broadcasting....
+  */
 }
 
 app.addListener('upgrade', function(request, socket, head) {
     console.log('upgrade');
 
     var ws = new WebSocket(request, socket, head);
-    connections.push(ws);
+    //Tell the Clients some stuff....
 
     ws.onmessage = function (event) {
       broadcast(event);

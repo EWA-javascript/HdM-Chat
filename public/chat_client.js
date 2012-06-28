@@ -1,36 +1,40 @@
 $(function(){
-    var ws;
-    var username;
+    var ws;				//The WebSocket
+    var username;		//Your Username
 
     console.log('START');
 
+    //Function to send Text
     function sendText() {
-      var message2send = username + ": " + $("#input").val();
-      ws.send(message2send);
-      $("#input").val('');
+      /*
+      TODO: sendText to the Server
+      
+      - Build Message to Send, eg "Schlauch: Yo what´s up!"
+      - Send Message to WebSocket
+      - Reset the Input Field
+      
+      */
     }
 
+    //Click to the Connect Button
     $("#connect").click(function(){
-        ws = new WebSocket("ws:localhost:8080");
-        username = $("#username").val();
-
-        ws.onopen = function(){
-          console.log("Connected as " + username);
-          /*TODO: Connect to the Server*/
-          ws.send("Say Hello to " + username);
-        };
-
-        ws.onmessage = function(message){
-          console.log("Got message: " + message.data);
-          var chatlog = $("#chatlog").val() + message.data + '\n';
-          $("#chatlog").val(chatlog);
-        };
+        /*
+        TODO: Connect to the Server
+        
+        - Create WebSocket
+        	- Tell the Server your name
+        	- Send a Message to the Server eg "Say Hello to Me"
+        	- React on incoming messages and write them to the chatlog
+        
+        */
       });
 
+    //Click on the "Send" Button -> SendText()
     $("#send").click(function(){
         sendText();
       })
 
+    //Hit the Enter Key -> SendText()
     $(document).keydown(function (e) {
         if (/^(input|textarea)$/i.test(e.target.nodeName) || e.target.isContentEditable) {
           if (e.keyCode === 13) {
