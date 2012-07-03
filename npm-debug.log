@@ -1,0 +1,340 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'hiredis', 'redis' ]
+info using npm@1.1.24
+info using node@v0.6.19
+verbose config file /Users/Markus/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose caching /Users/Markus/Developer/HdM-Chat/package.json
+verbose loadDefaults hdm-chat@1.0.0
+verbose caching /Users/Markus/Developer/HdM-Chat/node_modules/connect/package.json
+verbose caching /Users/Markus/Developer/HdM-Chat/node_modules/express/package.json
+verbose caching /Users/Markus/Developer/HdM-Chat/node_modules/faye-websocket/package.json
+verbose caching /Users/Markus/Developer/HdM-Chat/node_modules/redis/package.json
+verbose caching /Users/Markus/Developer/HdM-Chat/node_modules/sanitizer/package.json
+verbose from cache /Users/Markus/Developer/HdM-Chat/package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'hiredis', null ]
+silly cache add: name, spec, args [ undefined, 'hiredis', [ 'hiredis', null ] ]
+verbose parsed url { pathname: 'hiredis', path: 'hiredis', href: 'hiredis' }
+verbose cache add [ 'redis', null ]
+silly cache add: name, spec, args [ undefined, 'redis', [ 'redis', null ] ]
+verbose parsed url { pathname: 'redis', path: 'redis', href: 'redis' }
+verbose addNamed [ 'hiredis', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'hiredis', '', false ]
+verbose addNamed [ 'redis', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'redis', '', false ]
+verbose raw, before any munging hiredis
+verbose url resolving [ 'https://registry.npmjs.org/', './hiredis' ]
+verbose url resolved https://registry.npmjs.org/hiredis
+verbose etag "B4LGJC3PBWAFC6Z4IQ5DRL3D5"
+http GET https://registry.npmjs.org/hiredis
+verbose raw, before any munging redis
+verbose url resolving [ 'https://registry.npmjs.org/', './redis' ]
+verbose url resolved https://registry.npmjs.org/redis
+verbose etag "5OTNNKRNPH46HD5IQAQ5YBVFI"
+http GET https://registry.npmjs.org/redis
+http 304 https://registry.npmjs.org/hiredis
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"B4LGJC3PBWAFC6Z4IQ5DRL3D5"',
+silly get cb     date: 'Mon, 02 Jul 2012 18:41:37 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag hiredis from cache
+http 304 https://registry.npmjs.org/redis
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"5OTNNKRNPH46HD5IQAQ5YBVFI"',
+silly get cb     date: 'Mon, 02 Jul 2012 18:41:38 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag redis from cache
+silly name, range, hasData 2 [ 'hiredis', '', true ]
+silly versions [ 'hiredis',
+silly versions   [ '0.1.0',
+silly versions     '0.1.1',
+silly versions     '0.1.2',
+silly versions     '0.1.3',
+silly versions     '0.1.4',
+silly versions     '0.1.5',
+silly versions     '0.1.6',
+silly versions     '0.1.8',
+silly versions     '0.1.9',
+silly versions     '0.1.10',
+silly versions     '0.1.12',
+silly versions     '0.1.13',
+silly versions     '0.1.14' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.25-darwin-x64-11.4.0',
+verbose bin dist   { shasum: '37a8742dc26c14a7be8cf69549d96781403188b2',
+verbose bin dist     tarball: 'http://registry.npmjs.org/hiredis/-/hiredis-0.1.14.tgz' } ]
+silly name, range, hasData 2 [ 'redis', '', true ]
+silly versions [ 'redis',
+silly versions   [ '0.0.1',
+silly versions     '0.0.2',
+silly versions     '0.0.3',
+silly versions     '0.0.4',
+silly versions     '0.0.7',
+silly versions     '0.0.8',
+silly versions     '0.1.0',
+silly versions     '0.1.1',
+silly versions     '0.1.2',
+silly versions     '0.2.0',
+silly versions     '0.2.1',
+silly versions     '0.2.2',
+silly versions     '0.2.3',
+silly versions     '0.2.4',
+silly versions     '0.2.6',
+silly versions     '0.3.0',
+silly versions     '0.3.1',
+silly versions     '0.3.2',
+silly versions     '0.3.3',
+silly versions     '0.3.4',
+silly versions     '0.3.5',
+silly versions     '0.3.6',
+silly versions     '0.3.7',
+silly versions     '0.3.9',
+silly versions     '0.4.0',
+silly versions     '0.4.1',
+silly versions     '0.4.2',
+silly versions     '0.5.0',
+silly versions     '0.5.1',
+silly versions     '0.5.2',
+silly versions     '0.5.3',
+silly versions     '0.5.4',
+silly versions     '0.5.5',
+silly versions     '0.5.6',
+silly versions     '0.5.7',
+silly versions     '0.5.8',
+silly versions     '0.5.9',
+silly versions     '0.5.10',
+silly versions     '0.5.11',
+silly versions     '0.6.0',
+silly versions     '0.6.1',
+silly versions     '0.6.2',
+silly versions     '0.6.3',
+silly versions     '0.6.4',
+silly versions     '0.6.5',
+silly versions     '0.6.6',
+silly versions     '0.6.7',
+silly versions     '0.7.0',
+silly versions     '0.7.1',
+silly versions     '0.7.2' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.25-darwin-x64-11.4.0',
+verbose bin dist   { shasum: 'fa557fef4985ab3e3384fdc5be6e2541a0bb49af',
+verbose bin dist     tarball: 'http://registry.npmjs.org/redis/-/redis-0.7.2.tgz' } ]
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/Users/Markus/.npm/hiredis/0.1.14/package/package.json',
+verbose has wscript     gypfile: false,
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+verbose caching /Users/Markus/.npm/hiredis/0.1.14/package/package.json
+verbose loadDefaults hiredis@0.1.14
+verbose caching /Users/Markus/.npm/redis/0.7.2/package/package.json
+verbose loadDefaults redis@0.7.2
+silly resolved [ { name: 'hiredis',
+silly resolved     description: 'Wrapper for reply processing code in hiredis',
+silly resolved     version: '0.1.14',
+silly resolved     homepage: 'http://github.com/pietern/hiredis-node',
+silly resolved     author: { name: 'Pieter Noordhuis', email: 'pcnoordhuis@gmail.com' },
+silly resolved     main: 'hiredis',
+silly resolved     directories: { lib: '.' },
+silly resolved     scripts: { preinstall: 'make || gmake', test: 'node test/reader.js' },
+silly resolved     engines: { node: '*' },
+silly resolved     _id: 'hiredis@0.1.14',
+silly resolved     dependencies: {},
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.24',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'hiredis' },
+silly resolved   { name: 'redis',
+silly resolved     version: '0.7.2',
+silly resolved     description: 'Redis client library',
+silly resolved     author: { name: 'Matt Ranney', email: 'mjr@ranney.com' },
+silly resolved     maintainers: 
+silly resolved      [ { name: 'David Trejo',
+silly resolved          email: 'david.daniel.trejo@gmail.com',
+silly resolved          url: 'http://dtrejo.com/' } ],
+silly resolved     main: './index.js',
+silly resolved     scripts: { test: 'node ./test.js' },
+silly resolved     devDependencies: { metrics: '>=0.1.5' },
+silly resolved     optionalDependencies: { hiredis: '*' },
+silly resolved     repository: { type: 'git', url: 'git://github.com/mranney/node_redis.git' },
+silly resolved     _id: 'redis@0.7.2',
+silly resolved     dependencies: { hiredis: '*' },
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.24',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'redis' } ]
+info into /Users/Markus/Developer/HdM-Chat hiredis@0.1.14
+info into /Users/Markus/Developer/HdM-Chat redis@0.7.2
+info installOne hiredis@0.1.14
+info installOne redis@0.7.2
+verbose from cache /Users/Markus/.npm/hiredis/0.1.14/package/package.json
+info unbuild /Users/Markus/Developer/HdM-Chat/node_modules/hiredis
+verbose from cache /Users/Markus/.npm/redis/0.7.2/package/package.json
+info unbuild /Users/Markus/Developer/HdM-Chat/node_modules/redis
+verbose from cache /Users/Markus/Developer/HdM-Chat/node_modules/redis/package.json
+info preuninstall redis@0.7.2
+info uninstall redis@0.7.2
+verbose unpack /Users/Markus/.npm/hiredis/0.1.14/package.tgz
+verbose unbuild redis@0.7.2 [ true,
+verbose unbuild redis@0.7.2   '/Users/Markus/Developer/HdM-Chat/node_modules',
+verbose unbuild redis@0.7.2   '/Users/Markus/Developer/HdM-Chat/node_modules' ]
+info postuninstall redis@0.7.2
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry package.json
+silly extracting entry README
+silly extracting entry bench.js
+silly extracting entry hiredis.js
+silly extracting entry parser_bench.js
+verbose unpack /Users/Markus/.npm/redis/0.7.2/package.tgz
+silly gunzTarPerm modes [ '755', '644' ]
+silly extracting entry Makefile
+silly extracting entry deps/hiredis/README.md
+silly extracting entry deps/hiredis/example.c
+silly extracting entry deps/hiredis/async.h
+silly extracting entry deps/hiredis/CHANGELOG.md
+silly extracting entry package.json
+silly extracting entry deps/hiredis/COPYING
+silly extracting entry .npmignore
+silly extracting entry README.md
+silly extracting entry deps/hiredis/dict.c
+silly extracting entry deps/hiredis/dict.h
+silly extracting entry generate_commands.js
+silly extracting entry index.js
+silly extracting entry deps/hiredis/example-ae.c
+silly extracting entry deps/hiredis/example-libev.c
+silly extracting entry multi_bench.js
+silly extracting entry test.js
+silly extracting entry examples/auth.js
+silly extracting entry examples/mget.js
+silly extracting entry examples/monitor.js
+silly extracting entry examples/multi.js
+silly extracting entry deps/hiredis/example-libevent.c
+silly extracting entry deps/hiredis/async.c
+silly extracting entry examples/file.js
+silly extracting entry examples/psubscribe.js
+silly extracting entry examples/pub_sub.js
+silly extracting entry examples/simple.js
+silly extracting entry examples/sort.js
+silly extracting entry examples/subqueries.js
+silly extracting entry examples/extend.js
+silly extracting entry examples/subquery.js
+silly extracting entry deps/hiredis/fmacros.h
+silly extracting entry deps/hiredis/hiredis.c
+silly extracting entry examples/eval.js
+silly extracting entry examples/unix_socket.js
+silly extracting entry deps/hiredis/hiredis.h
+silly extracting entry examples/backpressure_drain.js
+silly extracting entry deps/hiredis/Makefile
+silly extracting entry examples/web_server.js
+silly extracting entry deps/hiredis/net.c
+silly extracting entry examples/multi2.js
+silly extracting entry deps/hiredis/net.h
+silly extracting entry changelog.md
+silly extracting entry deps/hiredis/adapters/ae.h
+silly extracting entry tests/buffer_bench.js
+silly extracting entry deps/hiredis/adapters/libev.h
+silly extracting entry tests/hiredis_parser.js
+silly extracting entry deps/hiredis/adapters/libevent.h
+silly extracting entry tests/re_sub_test.js
+silly extracting entry deps/hiredis/sds.c
+silly extracting entry tests/reconnect_test.js
+silly extracting entry deps/hiredis/sds.h
+silly extracting entry tests/sub_quit_test.js
+silly extracting entry deps/hiredis/test.c
+silly extracting entry tests/stress/codec.js
+silly extracting entry tests/stress/pubsub/pub.js
+silly extracting entry reader.cc
+silly extracting entry tests/stress/pubsub/server.js
+silly extracting entry reader.h
+silly extracting entry tests/stress/pubsub/run
+silly extracting entry hiredis.cc
+silly extracting entry tests/stress/rpushblpop/pub.js
+silly extracting entry test/reader.js
+silly extracting entry tests/stress/rpushblpop/server.js
+silly extracting entry wscript
+silly extracting entry tests/stress/rpushblpop/run
+silly extracting entry tests/stress/speed/speed.js
+silly extracting entry tests/stress/speed/00
+silly extracting entry tests/stress/speed/plot
+silly extracting entry tests/stress/speed/size-rate.png
+silly extracting entry lib/commands.js
+silly extracting entry lib/queue.js
+silly extracting entry lib/to_array.js
+silly extracting entry lib/util.js
+silly extracting entry lib/parser/hiredis.js
+silly extracting entry lib/parser/javascript.js
+verbose caching /Users/Markus/Developer/HdM-Chat/node_modules/redis/package.json
+verbose loadDefaults redis@0.7.2
+info preinstall redis@0.7.2
+verbose from cache /Users/Markus/Developer/HdM-Chat/node_modules/redis/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /Users/Markus/Developer/HdM-Chat/node_modules/redis/package.json
+verbose readDependencies: using package.json deps
+silly resolved []
+verbose about to build /Users/Markus/Developer/HdM-Chat/node_modules/redis
+info build /Users/Markus/Developer/HdM-Chat/node_modules/redis
+verbose from cache /Users/Markus/Developer/HdM-Chat/node_modules/redis/package.json
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/Users/Markus/Developer/HdM-Chat/node_modules' ]
+info linkStuff redis@0.7.2
+verbose linkBins redis@0.7.2
+verbose linkMans redis@0.7.2
+verbose rebuildBundles redis@0.7.2
+info install redis@0.7.2
+info postinstall redis@0.7.2
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/Users/Markus/Developer/HdM-Chat/node_modules/hiredis/package.json',
+verbose has wscript     gypfile: false,
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+verbose caching /Users/Markus/Developer/HdM-Chat/node_modules/hiredis/package.json
+verbose loadDefaults hiredis@0.1.14
+info preinstall hiredis@0.1.14
+verbose unsafe-perm in lifecycle true
+silly exec sh "-c" "make || gmake"
+silly spawning [ 'sh',
+silly spawning   [ '-c', 'make || gmake' ],
+silly spawning   '/Users/Markus/Developer/HdM-Chat/node_modules/hiredis' ]
+info hiredis@0.1.14 Failed to exec preinstall script
+info unbuild /Users/Markus/Developer/HdM-Chat/node_modules/hiredis
+verbose from cache /Users/Markus/Developer/HdM-Chat/node_modules/hiredis/package.json
+info preuninstall hiredis@0.1.14
+info uninstall hiredis@0.1.14
+verbose unbuild hiredis@0.1.14 [ true,
+verbose unbuild hiredis@0.1.14   '/Users/Markus/Developer/HdM-Chat/node_modules',
+verbose unbuild hiredis@0.1.14   '/Users/Markus/Developer/HdM-Chat/node_modules' ]
+info postuninstall hiredis@0.1.14
+ERR! hiredis@0.1.14 preinstall: `make || gmake`
+ERR! `sh "-c" "make || gmake"` failed with 127
+ERR! 
+ERR! Failed at the hiredis@0.1.14 preinstall script.
+ERR! This is most likely a problem with the hiredis package,
+ERR! not with npm itself.
+ERR! Tell the author that this fails on your system:
+ERR!     make || gmake
+ERR! You can get their info via:
+ERR!     npm owner ls hiredis
+ERR! There is likely additional logging output above.
+ERR! 
+ERR! System Darwin 11.4.0
+ERR! command "node" "/usr/local/bin/npm" "install" "hiredis" "redis"
+ERR! cwd /Users/Markus/Developer/HdM-Chat
+ERR! node -v v0.6.19
+ERR! npm -v 1.1.24
+ERR! code ELIFECYCLE
+ERR! message hiredis@0.1.14 preinstall: `make || gmake`
+ERR! message `sh "-c" "make || gmake"` failed with 127
+ERR! errno {}
+verbose exit [ 1, true ]
